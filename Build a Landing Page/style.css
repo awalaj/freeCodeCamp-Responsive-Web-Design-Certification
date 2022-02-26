@@ -1,0 +1,136 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+.navbar-list ul{
+    list-style: none;
+}
+.navbar-list ul li{
+    float: right;
+}
+.navbar-list ul li a{
+    color: black;
+}
+.btn{
+    background-color: #fae128;
+    padding-left: 23px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    padding-right: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: Arial Black;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: #ffcc12;
+}
+.container{
+    display:  grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 350px 200px 200px;
+}
+i{
+    color: #ffae00;
+    font-size: 50px;
+}
+.container .icon{
+    display: flex;
+    margin-top: 10px;
+}
+.container > div {
+    text-align: justify;
+    padding: 20px 0;
+}
+.desc1{
+    grid-area: 1 / 2 / span 1 / span 3;
+}
+.desc2{
+    grid-area: 2 / 2 / span 1 / span 3;
+}
+.desc3{
+    grid-area: 3 / 2 / span 1 / span 3;
+}
+button{
+    border: none;
+    padding: 10px 25px 10px 25px;
+    background-color: #fae128;
+}
+button:hover{
+    background-color: #ffcc12;
+}
+.card{
+    display: inline-block;
+    margin-right: 25px;
+    position:relative;
+}
+footer{
+    background-color: #ddd;
+}
+footer ul, a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+footer ul li{
+    margin-right: 30px;
+}
+footer ul li ,span{
+    float: right;
+}
+@media (max-width : 720px){
+    body{
+        overflow-x: hidden;
+    }
+    footer ul{
+        transform: translateX(-750px) translateY(30px);
+    }
+    footer span{
+        position: relative;
+        left: -530px;
+        font-size: 13px;
+    }
+    .container{
+        grid-template-columns: 50px 150px 100px 100px;  
+    }
+    .container .icon{
+        padding-top: 40px;
+    }
+    .container p{
+        font-size: 13px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    i{
+        font-size: 30px;
+    }
+    iframe{
+        width: 450px;
+    }
+    .card{
+        display: block;
+        position: relative;
+        z-index: -1;
+        margin-bottom: 20px;
+    }
+    nav{
+        height: 50px;
+    }
+    li{
+        margin-left: -25px;
+        transform: translateY(-30px) translateX(200px);
+        margin-right: 5px;
+        font-size: 13px;
+    }
+    #header-img{
+        width: 200px;
+        transform: translateX(-50px);
+    }
+}
