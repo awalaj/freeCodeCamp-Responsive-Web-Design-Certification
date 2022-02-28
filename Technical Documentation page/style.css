@@ -60,3 +60,39 @@ article{
 article p, ul li{
     margin-bottom: 25px;
 }
+@media (max-width: 600px) {
+    .navbar{
+        width: 28%;
+        height: 100%;
+        border-right: 3px solid grey;
+        font-size: 13px;
+        position: fixed;
+    }
+    .navbar .navbar-head p{
+        padding:  5px 10px 5px 10px;
+        font-size: large;
+        transform: translateX(-10px);
+    }
+    .navbar .navbar-list{
+        overflow-y: auto;
+        height: 585px;
+    }
+    .content{
+        transform: translateX(140px);
+        padding: 30px 35px;
+        width: 72%;
+        height: 100%;
+    }
+}
+@media (min-width: 1200px){
+    .navbar .navbar-list{
+        overflow-y: auto;
+        height: 605px;
+    }
+    .content{
+        transform: translateX(360px);
+        padding: 30px 35px;
+        width: 72%;
+        height: 100%;
+    }
+}
